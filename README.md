@@ -9,25 +9,25 @@ JS library for producing JSON in canonical format as specified by https://gibson
 ## Installation
 
 ```bash
-npm install canonicaljson
+npm install @stratumn/canonicaljson
 ```
 
 or
 
 ```bash
-yarn add canonicaljson
+yarn add @stratumn/canonicaljson
 ```
 
 ## Usage
 
 ```bash
-const json = require('canonicaljson');
+const json = require('@stratumn/canonicaljson');
 
 const obj = json.parse('{ "a": 12 }');
 console.log(json.stringify(obj))
 
 // or if you use ES6 modules
-import { parse, stringify } from 'canonicaljson';
+import { parse, stringify } from '@stratumn/canonicaljson';
 
 const obj = parse('{ "a": 12 }');
 console.log(stringify(obj))
